@@ -28,6 +28,9 @@ function fetchUserComments(){
 }
 
 // Implement Sequential and Parallel Data Fetching // Try/Catch for Error Handling // Chaining Async Functions
+
+getUserContent();
+
 async function getUserContent() {
     try{
         const profile = await fetchUserProfile();
@@ -43,7 +46,6 @@ async function getUserContent() {
 
 // Refactor with Async/Await
 function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function userProfile() {
@@ -76,6 +78,3 @@ userComments()
   .then(commentsResult => {
     console.log(commentsResult);
   });
-  
-// Implement Sequential and Parallel Data Fetching // Try/Catch for Error Handling // Chaining Async Functions
-getUserContent();
