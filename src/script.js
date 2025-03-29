@@ -64,13 +64,16 @@ async function userComments() {
     return ['comment 1','comment 2','comment 3'];
 }
 
-userProfile().then(profile => {
+userProfile()
+.then(profile => {
     console.log(profile);
   });
-  userPosts().then(posts => {
+userPosts()
+  .then(posts => {
     console.log(posts);
   });
-  userComments().then(comments => {
+userComments()
+  .then(comments => {
     console.log(comments);
   });
   
