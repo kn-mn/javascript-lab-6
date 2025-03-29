@@ -27,7 +27,7 @@ function fetchUserComments(){
         });
 }
 
-// Implement Sequential and Parallel Data Fetching // Try/Catch for Error Handling // Chaining Async Functions
+// Implement Sequential Data Fetching // Try/Catch for Error Handling // Chaining Async Functions
 
 getUserContent();
 
@@ -65,6 +65,8 @@ async function userComments() {
     await delay(2500);
     return ['comment 1','comment 2','comment 3'];
 }
+
+// Implement Parallel Data Fetching
 
 userProfile()
 .then(profileResult => {
