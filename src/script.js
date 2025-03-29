@@ -65,16 +65,16 @@ async function userComments() {
 }
 
 userProfile()
-.then(profile => {
-    console.log(profile);
+.then(profileResult => {
+    console.log(profileResult);
   });
 userPosts()
-  .then(posts => {
-    console.log(posts);
+  .then(postsResult => {
+    console.log(postsResult);
   });
 userComments()
-  .then(comments => {
-    console.log(comments);
+  .then(commentsResult => {
+    console.log(commentsResult);
   });
   
 // Implement Sequential and Parallel Data Fetching // Try/Catch for Error Handling // Chaining Async Functions
