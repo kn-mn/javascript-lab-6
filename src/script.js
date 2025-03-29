@@ -27,7 +27,7 @@ function fetchUserComments(){
         });
 }
 
-// Implement Sequential Data Fetching // Try/Catch for Error Handling // Chaining Async Functions
+// Implement Sequential Data Fetching // Try/Catch for Error Handling
 
 getUserContent();
 
@@ -44,7 +44,7 @@ async function getUserContent() {
     }
 }
 
-// Refactor with Async/Await
+// Refactor with Async/Await // Chaining Async Functions
 function delay(ms) {
 }
 
