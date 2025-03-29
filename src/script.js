@@ -3,7 +3,7 @@ function fetchUserProfile(){
     return new Promise((resolve) => {
         setTimeout(() => {
           resolve("user");
-        }, 1000);
+        }, 500);
       });
     }
 
@@ -11,7 +11,7 @@ function fetchUserPosts(){
 return new Promise((resolve) => {
     setTimeout(() => {
         resolve(["my first post", "my second post", "my last post"]);
-    }, 1000);
+    }, 500);
     });
 }
 
@@ -23,7 +23,7 @@ function fetchUserComments(){
             }
             else {
                 reject("error");
-            }}, 1000);
+            }}, 500);
         });
 }
 
@@ -48,19 +48,19 @@ function delay(ms) {
 
 async function userProfile() {
     console.log('fetching Profile');
-    await delay(1000);
+    await delay(2500);
     return { name: 'user' };
 }
 
 async function userPosts() {
     console.log('fetching Posts'); 
-    await delay(1000);
+    await delay(2500);
     return ['post 1','post 2','post 3'];
 }
 
 async function userComments() {
     console.log('fetching Comments');
-    await delay(1000);
+    await delay(2500);
     return ['comment 1','comment 2','comment 3'];
 }
 
